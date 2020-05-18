@@ -4,9 +4,10 @@
         <div class="row">
 
           <div class="col-lg-4 col-md-6 footer-info">
-            <h6 style="font-weight:bold;">{{ config('app.name') }}</h6>
+                    <a href="#intro" class="scrollto" style="color:white"><h6 style="font-weight: bold;font-family:'Times New Roman'!important;text-shadow:1px 2px red;font-size:30px"><i class="fa fa-code"></i>{{ config('app.name') }}</h6></a>
+
             <p>
-                SmartSoft International is an established Software and security company based in Kenya. The sole mandate of the company is to
+               {{ config('app.name') }} International is an established Software and security company based in Kenya. The sole mandate of the company is to
                 provide custom Software and security measures to help in smooth running of any bussiness. We utilise cutting-edge technology,
                 extensive knowledge  and experience for you to avoid security breaches and interuptions that may cause you money or lead to any
                 loss to the business.
@@ -26,7 +27,7 @@
             <h4>Contact Us</h4>
             <p>
               <strong>Phone:</strong> +254 (0) 704 922 042<br>
-              <strong>Email:</strong> info@smartsoftinternational.com<br>
+              <strong>Email:</strong> info@blusoft.co.ke<br>
             </p>
 
             <div class="social-links">
@@ -54,7 +55,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; <?php echo date('Y');?> <strong>{{ config('app.name') }}</strong>. All Rights Reserved
+        &copy; <?php echo date('Y');?>| All Rights Reserved
       </div>
       <div class="credits">
         Designed by <a href="{{ url('') }}">{{ config('app.name') }}</a>

@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Contact;
 use Illuminate\Http\Request;
 use App\Number;
@@ -8,7 +9,8 @@ use Session;
 
 class IndexController extends Controller
 {
-    public function __construct(){
+    public function __construct()
+    {
         // $this->middleware('auth');
     }
     /**
@@ -87,11 +89,15 @@ class IndexController extends Controller
     {
         //
     }
-    public function contact(Request $request){
-        Contact::create([
-            'Email'=>$request->Email
+    public function contact(Request $request)
+    {
+        $this->validate($request, [
+            'Email' => 'required|unique:contacts'
         ]);
-        Session::flash('success','You have Successfully SUbscribed');
+        Contact::create([
+            'Email' => $request->Email
+        ]);
+        Session::flash('success', 'You have Successfully Subscribed to Our Newsletter');
         return back();
     }
 }

@@ -10,12 +10,19 @@
       <div class="logo float-left">
         <!-- Uncomment below if you prefer to use an text logo -->
         <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
-        <a href="#intro" class="scrollto"><h6 style="font-weight: bold;font-family:'Times New Roman'!important">{{ config('app.name') }}</h6></a>
+        <a href="#intro" class="scrollto"><h6 style="font-weight: bold;font-family:'Times New Roman'!important;text-shadow:1px 2px red;font-size:30px"><i class="fa fa-code"></i>{{ config('app.name') }}</h6></a>
       </div>
 
       @include('layouts.nav')
       <!-- .main-nav -->
-
+@if($errors->all())
+<div class="alert alert-danger">
+    <a href="#" class="close" data-dismiss="alert">&timesbar;</a>
+    @foreach ($errors->all() as $error)
+    <strong>{{ $error }}</strong>
+    @endforeach
+</div>
+@endif
     </div>
   </header><!-- #header -->
 
@@ -46,7 +53,7 @@
 
         <header class="section-header">
           <h3>About Us</h3>
-          <p>SmartSoft International is an established Software and security company based in Kenya. The sole mandate of the company is to provide custom Software and security measures
+          <p>{{ config('app.name')}} International is an established Software and security company based in Kenya. The sole mandate of the company is to provide custom Software and security measures
             to help in smooth running of any bussiness.
             We utilise cutting-edge technology, extensive knowledge and experience for  you to avoid security breaches and interuptions that may cause you money
             or lead to any loss to the business.

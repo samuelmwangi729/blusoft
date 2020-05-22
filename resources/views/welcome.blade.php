@@ -2,17 +2,12 @@
 <html lang="en">
 @include('layouts.head')
 <body style="overflow-y:scroll">
-
-  <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container">
-
       <div class="logo float-left">
-        <!-- Uncomment below if you prefer to use an text logo -->
-        <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
+          {{-- <img src="{{ asset('img/logo.png') }}" width="300px"> --}}
         <a href="#intro" class="scrollto"><h6 style="font-weight: bold;font-family:'Times New Roman'!important;text-shadow:1px 2px red;font-size:30px"><i class="fa fa-code"></i>{{ config('app.name') }}</h6></a>
       </div>
-
       @include('layouts.nav')
       <!-- .main-nav -->
 @if($errors->all())
@@ -24,9 +19,7 @@
 </div>
 @endif
     </div>
-  </header><!-- #header -->
-
-  <!-- ======= Intro Section ======= -->
+  </header>
   <section id="intro" class="clearfix">
     <div class="container">
 

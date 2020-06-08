@@ -2,8 +2,8 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>{{ config('app.name') }}</title>
-    <meta content="{{ config('app.name') }} is a company developed to provide custom web solutions to your business. We deal with web development, web design and all soughts of Applications. We are glad to be of help to you." name="descriptison">
+    <title>"{{ config('app.name') }} is a company developed to provide custom web solutions to your business. We deal with web development, web design and all soughts of Applications. We are glad to be of help to you."</title>
+    <meta content="{{ config('app.name') }} is a company developed to provide custom web solutions to your business. We deal with web development, web design and all soughts of Applications. We are glad to be of help to you." name="description">
     <meta content="Websites, Freelance, Kenya, Africa, Development, Jobs,Information Security, Hacking,Flutter, Android Development" name="keywords">
 
     <!-- Favicons -->
